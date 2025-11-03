@@ -26,7 +26,7 @@ public class PostController {
 	
 	//get data by id
 	@GetMapping("/{id}")
-	public Map<String, Object> getPostbyId(@PathVariable Long id) {
+	public Map<String, Object> getPostById(@PathVariable Long id) {
 		return postService.getPostbyId(id);
 	}
 }
